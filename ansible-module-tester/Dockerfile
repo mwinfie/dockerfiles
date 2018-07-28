@@ -6,7 +6,10 @@ FROM microsoft/mssql-server-windows-developer:2017-CU3
 # Metadata
 LABEL maintainer="Matthew Winfield <mwinfie@gmail.com>" \
     version="1.0" \
-    description="This Dockerfile creates my first windows image."
+    description="This Dockerfile creates an image that \
+installs git 2.18.0, Ansible.ModuleUtils.Legacy.psm1 from \
+ansible 2.6.1, and the latest version of my ansible modules \
+to perform automated testing of the mssql module."
 
 # Install git
 ENV GIT_VERSION 2.18.0
